@@ -58,7 +58,6 @@ App runs on `http://localhost:8080`. Swagger UI at `/swagger-ui.html`, OpenAPI J
 - `common/config/` — `SecurityConfig` (route access rules), `DataSeeder` (creates roles, admin account, demo data on startup), `AsyncConfig`, `JpaAuditingConfig`, `WebConfig`, `OpenApiConfig`
 - `common/exception/` — domain exceptions + `GlobalExceptionHandler` (`@ControllerAdvice`) mapping them to `ApiError` responses
 - `common/email/` — `EmailService` + email data DTOs (order confirmation, low-stock alerts)
-- `common/notification/` — Twilio SMS/WhatsApp integration
 - `common/util/` — `BaseEntity` (shared id/audit fields), slug/currency/order-number helpers, `CategoryPromotionResolver`, `PagedResponse`
 
 When adding a new feature, mirror this package layout rather than adding to an existing feature

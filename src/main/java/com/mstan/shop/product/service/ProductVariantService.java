@@ -2,6 +2,7 @@ package com.mstan.shop.product.service;
 
 import com.mstan.shop.common.exception.DuplicateResourceException;
 import com.mstan.shop.common.exception.ResourceNotFoundException;
+import com.mstan.shop.product.dto.VariantCreateRequest;
 import com.mstan.shop.product.dto.VariantRequest;
 import com.mstan.shop.product.dto.VariantResponse;
 import com.mstan.shop.product.entity.Product;
@@ -13,7 +14,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 @Service
@@ -32,26 +36,22 @@ public class ProductVariantService {
     }
 
     @Transactional
-    public VariantResponse create(UUID productId, VariantRequest request) {
+    public List<VariantResponse> create(UUID productId, VariantCreateRequest request) {
         Product product = productService.findProduct(productId);
-        String size = normalizeSize(request.size());
 
-        if (productVariantRepository.existsByProductIdAndColorHexIgnoreCaseAndSizeIgnoreCase(productId, request.colorHex(), size)) {
-            throw new DuplicateResourceException("Une variante avec cette couleur et cette taille existe déjà pour ce produit");
+        Set<String> seenSizes = new HashSet<>();
+        List<ProductVariant> created = new ArrayList<>();
+        for (String size : request.sizes()) {
+            String normalizedSize = size == null ? "" : size.trim();
+            if (!seenSizes.add(normalizedSize.toLowerCase())) {
+                throw new IllegalArgumentException("La liste de tailles contient un doublon");
+            }
+            created.add(productService.buildVariant(product, request.colorName(), request.colorHex(), size, request.stock(), request.active()));
         }
-
-        ProductVariant variant = new ProductVariant();
-        variant.setProduct(product);
-        variant.setColorName(request.colorName());
-        variant.setColorHex(request.colorHex());
-        variant.setSize(size);
-        variant.setStock(request.stock());
-        variant.setActive(request.active());
-        product.getVariants().add(variant);
 
         productRepository.save(product);
 
-        return productMapper.toVariantResponse(variant);
+        return created.stream().map(productMapper::toVariantResponse).toList();
     }
 
     @Transactional
@@ -59,16 +59,24 @@ public class ProductVariantService {
         Product product = productService.findProduct(productId);
         ProductVariant variant = findVariant(product, variantId);
         String size = normalizeSize(request.size());
+        String normalizedColorHex = (request.colorHex() == null || request.colorHex().isBlank()) ? null : request.colorHex();
 
-        boolean colorOrSizeChanged = !variant.getColorHex().equalsIgnoreCase(request.colorHex())
+        boolean colorOrSizeChanged = !java.util.Objects.equals(
+                variant.getColorHex() == null ? null : variant.getColorHex().toLowerCase(),
+                normalizedColorHex == null ? null : normalizedColorHex.toLowerCase())
                 || !variant.getSize().equalsIgnoreCase(size);
-        if (colorOrSizeChanged
-                && productVariantRepository.existsByProductIdAndColorHexIgnoreCaseAndSizeIgnoreCase(productId, request.colorHex(), size)) {
-            throw new DuplicateResourceException("Une variante avec cette couleur et cette taille existe déjà pour ce produit");
+
+        if (colorOrSizeChanged) {
+            boolean duplicate = normalizedColorHex == null
+                    ? productVariantRepository.existsByProductIdAndColorHexIsNullAndSizeIgnoreCase(productId, size)
+                    : productVariantRepository.existsByProductIdAndColorHexIgnoreCaseAndSizeIgnoreCase(productId, normalizedColorHex, size);
+            if (duplicate) {
+                throw new DuplicateResourceException("Une variante avec cette couleur et cette taille existe déjà pour ce produit");
+            }
         }
 
         variant.setColorName(request.colorName());
-        variant.setColorHex(request.colorHex());
+        variant.setColorHex(normalizedColorHex);
         variant.setSize(size);
         variant.setStock(request.stock());
         variant.setActive(request.active());

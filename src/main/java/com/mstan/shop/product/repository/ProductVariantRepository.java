@@ -10,6 +10,8 @@ public interface ProductVariantRepository extends JpaRepository<ProductVariant, 
 
     boolean existsByProductIdAndColorHexIgnoreCaseAndSizeIgnoreCase(UUID productId, String colorHex, String size);
 
+    boolean existsByProductIdAndColorHexIsNullAndSizeIgnoreCase(UUID productId, String size);
+
     List<ProductVariant> findByProductId(UUID productId);
 
     List<ProductVariant> findByStockLessThan(int threshold);

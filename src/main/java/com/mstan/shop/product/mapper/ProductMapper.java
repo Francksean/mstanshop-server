@@ -21,9 +21,10 @@ public interface ProductMapper {
     @Mapping(target = "stock", expression = "java(resolveStock(product))")
     @Mapping(target = "price", expression = "java(resolveEffectivePrice(product))")
     @Mapping(target = "oldPrice", expression = "java(resolveOldPrice(product))")
+    @Mapping(target = "purchasePrice", expression = "java(includePurchasePrice ? product.getPurchasePrice() : null)")
     @Mapping(target = "averageRating", source = "averageRating")
     @Mapping(target = "reviewCount", source = "reviewCount")
-    ProductResponse toResponse(Product product, Double averageRating, long reviewCount);
+    ProductResponse toResponse(Product product, Double averageRating, long reviewCount, boolean includePurchasePrice);
 
     @Mapping(target = "categoryId", source = "product.category.id")
     @Mapping(target = "categoryName", source = "product.category.name")
@@ -32,9 +33,10 @@ public interface ProductMapper {
     @Mapping(target = "stock", expression = "java(resolveStock(product))")
     @Mapping(target = "price", expression = "java(resolveEffectivePrice(product))")
     @Mapping(target = "oldPrice", expression = "java(resolveOldPrice(product))")
+    @Mapping(target = "purchasePrice", expression = "java(includePurchasePrice ? product.getPurchasePrice() : null)")
     @Mapping(target = "averageRating", source = "averageRating")
     @Mapping(target = "reviewCount", source = "reviewCount")
-    ProductDetailResponse toDetailResponse(Product product, Double averageRating, long reviewCount);
+    ProductDetailResponse toDetailResponse(Product product, Double averageRating, long reviewCount, boolean includePurchasePrice);
 
     @Mapping(target = "thumbnail", source = "thumbnail")
     @Mapping(target = "variantId", expression = "java(image.getVariant() != null ? image.getVariant().getId() : null)")

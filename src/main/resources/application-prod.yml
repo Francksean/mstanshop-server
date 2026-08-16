@@ -32,6 +32,10 @@ spring:
               - email
               - profile
 
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:https://mstanshop.com,https://www.mstanshop.com}
+
 logging:
   level:
     com.mstan.shop: INFO

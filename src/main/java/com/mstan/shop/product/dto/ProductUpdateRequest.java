@@ -19,6 +19,9 @@ public record ProductUpdateRequest(
         @DecimalMin(value = "0.0", inclusive = false, message = "Le prix doit être positif")
         BigDecimal price,
 
+        @DecimalMin(value = "0.0", message = "Le prix d'achat ne peut pas être négatif")
+        BigDecimal purchasePrice,
+
         @NotNull(message = "Le stock est obligatoire")
         @Min(value = 0, message = "Le stock ne peut pas être négatif")
         Integer stock,

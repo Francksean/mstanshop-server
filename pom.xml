@@ -112,13 +112,6 @@
             <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
 
-        <!-- SMS / WhatsApp -->
-        <dependency>
-            <groupId>com.twilio.sdk</groupId>
-            <artifactId>twilio</artifactId>
-            <version>10.6.5</version>
-        </dependency>
-
         <!-- .env loading -->
         <dependency>
             <groupId>me.paulschwarz</groupId>

@@ -4,7 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mstan.shop.whatsapp.entity.WhatsAppMessage;
 import com.mstan.shop.whatsapp.entity.WhatsAppMessageStatus;
+import com.mstan.shop.whatsapp.entity.WhatsAppTemplate;
+import com.mstan.shop.whatsapp.entity.WhatsAppTemplateStatus;
 import com.mstan.shop.whatsapp.repository.WhatsAppMessageRepository;
+import com.mstan.shop.whatsapp.repository.WhatsAppTemplateRepository;
 import com.mstan.shop.whatsapp.service.GenukaWebhookSignatureVerifier;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -33,6 +36,7 @@ public class GenukaWebhookController {
 
     private final GenukaWebhookSignatureVerifier signatureVerifier;
     private final WhatsAppMessageRepository whatsAppMessageRepository;
+    private final WhatsAppTemplateRepository whatsAppTemplateRepository;
     private final ObjectMapper objectMapper;
 
     @PostMapping
@@ -57,6 +61,12 @@ public class GenukaWebhookController {
     private void processEvent(String rawPayload) throws com.fasterxml.jackson.core.JsonProcessingException {
         JsonNode root = objectMapper.readTree(rawPayload);
         String type = root.path("type").asText(null);
+
+        if ("message_template_status_update".equals(type)) {
+            processTemplateStatusUpdate(root.path("data"));
+            return;
+        }
+
         if (!"messages".equals(type)) {
             log.info("Événement Genuka de type {} ignoré (non exploité)", type);
             return;
@@ -88,6 +98,40 @@ public class GenukaWebhookController {
         } else {
             log.info("Statut Genuka '{}' ignoré pour {} (déjà à un statut plus avancé)", status, providerMessageId);
         }
+    }
+
+    private void processTemplateStatusUpdate(JsonNode data) {
+        String genukaTemplateId = data.path("id").asText(null);
+        String status = data.path("status").asText(null);
+        if (genukaTemplateId == null || status == null) {
+            log.warn("Webhook Genuka de type message_template_status_update sans id/status exploitable : {}", data);
+            return;
+        }
+
+        WhatsAppTemplateStatus newStatus = mapTemplateStatus(status);
+        if (newStatus == null) {
+            log.info("Statut de template Genuka inconnu '{}' ignoré", status);
+            return;
+        }
+
+        WhatsAppTemplate template = whatsAppTemplateRepository.findByGenukaTemplateId(genukaTemplateId).orElse(null);
+        if (template == null) {
+            log.warn("Aucun WhatsAppTemplate trouvé pour genukaTemplateId {}", genukaTemplateId);
+            return;
+        }
+
+        template.setStatus(newStatus);
+        whatsAppTemplateRepository.save(template);
+    }
+
+    private WhatsAppTemplateStatus mapTemplateStatus(String status) {
+        return switch (status.toUpperCase()) {
+            case "APPROVED" -> WhatsAppTemplateStatus.APPROVED;
+            case "REJECTED" -> WhatsAppTemplateStatus.REJECTED;
+            case "PAUSED" -> WhatsAppTemplateStatus.PAUSED;
+            case "PENDING" -> WhatsAppTemplateStatus.PENDING;
+            default -> null;
+        };
     }
 
     private WhatsAppMessageStatus mapStatus(String status) {

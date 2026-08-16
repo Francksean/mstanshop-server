@@ -17,6 +17,8 @@ public record CategoryResponse(
         boolean promoActive,
         PromoDiscountType promoDiscountType,
         BigDecimal promoDiscountValue,
-        Instant promoEndsAt
+        Instant promoEndsAt,
+        UUID parentId,
+        String parentName
 ) {
 }

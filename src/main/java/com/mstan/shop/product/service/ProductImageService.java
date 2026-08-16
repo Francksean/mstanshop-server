@@ -40,11 +40,7 @@ public class ProductImageService {
             throw new IllegalArgumentException("La clé d'objet ne correspond pas au produit indiqué");
         }
 
-        long size = r2StorageService.headObjectSize(request.objectKey());
-        if (size > maxSizeBytes) {
-            r2StorageService.deleteObject(request.objectKey());
-            throw new IllegalArgumentException("Le fichier envoyé dépasse la taille maximale autorisée");
-        }
+        r2StorageService.enforceMaxSize(request.objectKey(), maxSizeBytes);
 
         ProductVariant variant = resolveVariant(product, request.variantId());
         boolean hasExistingThumbnail = product.getImages().stream().anyMatch(ProductImage::isThumbnail);

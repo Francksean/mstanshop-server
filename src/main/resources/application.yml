@@ -55,17 +55,8 @@ app:
       api-key: ${CAMPAY_API_KEY:}
       webhook-key: ${CAMPAY_WEBHOOK_KEY:}
   notification:
-    twilio:
-      account-sid: ${TWILIO_ACCOUNT_SID:}
-      auth-token: ${TWILIO_AUTH_TOKEN:}
-      sms-from: ${TWILIO_SMS_FROM:}
     genuka:
       base-url: ${GENUKA_BASE_URL:https://wa.genuka.com/api/v1}
       api-key: ${GENUKA_API_KEY:}
       connection-id: ${GENUKA_CONNECTION_ID:}
       webhook-secret: ${GENUKA_WEBHOOK_SECRET:}
-      language: ${GENUKA_TEMPLATE_LANGUAGE:fr}
-      templates:
-        order-confirmation: ${GENUKA_TEMPLATE_ORDER_CONFIRMATION:order_confirmation}
-        payment-failed: ${GENUKA_TEMPLATE_PAYMENT_FAILED:payment_failed}
-        order-cancellation: ${GENUKA_TEMPLATE_ORDER_CANCELLATION:order_cancellation}

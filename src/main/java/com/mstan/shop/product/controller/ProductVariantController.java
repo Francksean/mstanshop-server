@@ -1,5 +1,6 @@
 package com.mstan.shop.product.controller;
 
+import com.mstan.shop.product.dto.VariantCreateRequest;
 import com.mstan.shop.product.dto.VariantRequest;
 import com.mstan.shop.product.dto.VariantResponse;
 import com.mstan.shop.product.service.ProductVariantService;
@@ -34,7 +35,7 @@ public class ProductVariantController {
     }
 
     @PostMapping
-    public ResponseEntity<VariantResponse> create(@PathVariable UUID productId, @Valid @RequestBody VariantRequest request) {
+    public ResponseEntity<List<VariantResponse>> create(@PathVariable UUID productId, @Valid @RequestBody VariantCreateRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(productVariantService.create(productId, request));
     }
 

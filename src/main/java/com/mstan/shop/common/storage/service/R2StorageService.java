@@ -96,6 +96,13 @@ public class R2StorageService {
         return s3Client.headObject(HeadObjectRequest.builder().bucket(bucket).key(objectKey).build()).contentLength();
     }
 
+    public void enforceMaxSize(String objectKey, long maxSizeBytes) {
+        if (headObjectSize(objectKey) > maxSizeBytes) {
+            deleteObject(objectKey);
+            throw new IllegalArgumentException("Le fichier envoyé dépasse la taille maximale autorisée");
+        }
+    }
+
     public void deleteObject(String objectKey) {
         if (objectKey == null || objectKey.isBlank()) {
             return;

@@ -6,7 +6,11 @@ import com.mstan.shop.whatsapp.dto.GenukaSendMessageResponse;
 import com.mstan.shop.whatsapp.dto.GenukaTemplatePayload;
 import com.mstan.shop.whatsapp.entity.WhatsAppMessage;
 import com.mstan.shop.whatsapp.entity.WhatsAppMessageStatus;
+import com.mstan.shop.whatsapp.entity.WhatsAppTemplate;
+import com.mstan.shop.whatsapp.entity.WhatsAppTemplateEventCode;
+import com.mstan.shop.whatsapp.entity.WhatsAppTemplateStatus;
 import com.mstan.shop.whatsapp.repository.WhatsAppMessageRepository;
+import com.mstan.shop.whatsapp.repository.WhatsAppTemplateRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
@@ -20,51 +24,60 @@ import java.util.List;
 public class GenukaWhatsAppService {
 
     private final WhatsAppMessageRepository whatsAppMessageRepository;
+    private final WhatsAppTemplateRepository whatsAppTemplateRepository;
     private final RestClient restClient;
     private final String connectionId;
-    private final String language;
-    private final String orderConfirmationTemplate;
-    private final String paymentFailedTemplate;
-    private final String orderCancellationTemplate;
 
     public GenukaWhatsAppService(
             WhatsAppMessageRepository whatsAppMessageRepository,
+            WhatsAppTemplateRepository whatsAppTemplateRepository,
             @Value("${app.notification.genuka.base-url}") String baseUrl,
             @Value("${app.notification.genuka.api-key}") String apiKey,
-            @Value("${app.notification.genuka.connection-id}") String connectionId,
-            @Value("${app.notification.genuka.language}") String language,
-            @Value("${app.notification.genuka.templates.order-confirmation}") String orderConfirmationTemplate,
-            @Value("${app.notification.genuka.templates.payment-failed}") String paymentFailedTemplate,
-            @Value("${app.notification.genuka.templates.order-cancellation}") String orderCancellationTemplate
+            @Value("${app.notification.genuka.connection-id}") String connectionId
     ) {
         this.whatsAppMessageRepository = whatsAppMessageRepository;
+        this.whatsAppTemplateRepository = whatsAppTemplateRepository;
         this.restClient = RestClient.builder()
                 .baseUrl(baseUrl)
                 .defaultHeader("Authorization", "Bearer " + apiKey)
                 .build();
         this.connectionId = connectionId;
-        this.language = language;
-        this.orderConfirmationTemplate = orderConfirmationTemplate;
-        this.paymentFailedTemplate = paymentFailedTemplate;
-        this.orderCancellationTemplate = orderCancellationTemplate;
     }
 
     @Async
     public void sendOrderConfirmation(Order order, String phone, String totalFormatted) {
-        send(order, phone, orderConfirmationTemplate, List.of(order.getOrderNumber(), totalFormatted));
+        send(order, phone, WhatsAppTemplateEventCode.ORDER_CONFIRMATION, List.of(order.getOrderNumber(), totalFormatted));
     }
 
     @Async
     public void sendPaymentFailed(Order order, String phone) {
-        send(order, phone, paymentFailedTemplate, List.of(order.getOrderNumber()));
+        send(order, phone, WhatsAppTemplateEventCode.PAYMENT_FAILED, List.of(order.getOrderNumber()));
     }
 
     @Async
     public void sendOrderCancellation(Order order, String phone) {
-        send(order, phone, orderCancellationTemplate, List.of(order.getOrderNumber()));
+        send(order, phone, WhatsAppTemplateEventCode.ORDER_CANCELLATION, List.of(order.getOrderNumber()));
     }
 
-    private void send(Order order, String phone, String templateName, List<String> variables) {
+    private void send(Order order, String phone, WhatsAppTemplateEventCode eventCode, List<String> variables) {
+        WhatsAppTemplate template = whatsAppTemplateRepository.findByEventCode(eventCode).orElse(null);
+
+        if (template == null || template.getStatus() != WhatsAppTemplateStatus.APPROVED) {
+            WhatsAppMessage message = new WhatsAppMessage();
+            message.setOrder(order);
+            message.setPhoneNumber(phone);
+            message.setTemplateName(template != null ? template.getName() : eventCode.name());
+            message.setStatus(WhatsAppMessageStatus.FAILED);
+            message.setErrorMessage("Aucun template WhatsApp approuvé pour l'événement " + eventCode);
+            whatsAppMessageRepository.save(message);
+            log.warn("Envoi WhatsApp {} annulé pour {} : aucun template approuvé", eventCode, phone);
+            return;
+        }
+
+        send(order, phone, template.getName(), template.getLanguage(), variables);
+    }
+
+    private void send(Order order, String phone, String templateName, String language, List<String> variables) {
         WhatsAppMessage message = new WhatsAppMessage();
         message.setOrder(order);
         message.setPhoneNumber(phone);

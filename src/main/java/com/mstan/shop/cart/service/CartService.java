@@ -168,7 +168,8 @@ public class CartService {
             if (variant.getStock() < requestedQuantity) {
                 throw new InsufficientStockException(
                         "Stock insuffisant pour le produit \"" + product.getName() + "\" (couleur : "
-                                + (variant.getColorName() != null ? variant.getColorName() : variant.getColorHex())
+                                + (variant.getColorName() != null ? variant.getColorName()
+                                        : variant.getColorHex() != null ? variant.getColorHex() : variant.getSize())
                                 + ", disponible : " + variant.getStock() + ")"
                 );
             }

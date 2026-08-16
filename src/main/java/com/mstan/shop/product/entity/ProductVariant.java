@@ -28,7 +28,7 @@ public class ProductVariant extends BaseEntity {
 
     private String colorName;
 
-    @Column(name = "color_hex", nullable = false)
+    @Column(name = "color_hex")
     private String colorHex;
 
     /** Empty string means the product has no size dimension for this variant. */

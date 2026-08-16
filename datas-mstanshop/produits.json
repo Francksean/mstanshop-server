@@ -1,0 +1,1377 @@
+[
+  {
+    "name": "Mules plates en cuir",
+    "description": "Alliant l'élégance moderne à un éclat précieux, ces mules plates en cuir noir se distinguent par leur design sophistiqué à larges brides entrelacées. Le cuir souple présente une texture tressée raffinée, sublimée par une rangée de cristaux transparents qui traverse l'avant du pied, créant un jeu de lumière subtil et luxueux. Avec leur bout carré ouvert et leur semelle intérieure noire au maintien ergonomique, elles associent un confort optimal à un style minimaliste haut de gamme. Faciles à enfiler, ces sandales sont l'incarnation du chic décontracté : parfaites pour rehausser un jean et un t-shirt au quotidien ou pour apporter une touche de glamour discret à une tenue de soirée estivale.",
+    "purchasedPrice": 9000,
+    "price": 12000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "noir",
+        "colorHex": "#292929",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "blanc",
+        "colorHex": "#f7f7f7",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/001.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/002.jpeg"
+      },
+      {
+        "image": "./images/003.jpeg"
+      },
+      {
+        "image": "./images/004.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Tennis blanches",
+    "description": "Indispensables du dressing moderne, ces baskets blanches à la silhouette épurée incarnent l'élégance décontractée et le confort au quotidien. Confectionnées avec une empeigne en cuir souple de haute qualité, elles arborent un design classique rehaussé par des surpiqûres soignées, un laçage ton sur ton et un discret détail métallique argenté sur le côté qui apporte une touche de raffinement. Leur semelle épaisse et profilée garantit une excellente stabilité et un amorti optimal pour toutes vos journées, qu'elles soient actives ou de détente. Alliant parfaitement style et fonctionnalité, ces sneakers blanches se marient avec tout : elles apportent une touche de fraîcheur à un jean slim, dynamisent une jupe fluide ou s'associent avec élégance à un pantalon tailleur pour un look casual-chic. Une pièce incontournable pour une allure résolument tendance et intemporelle.",
+    "purchasedPrice": 6500,
+    "price": 8500,
+    "stock": 50,
+    "category": "Tennis femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/006.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Sneakers sportwears",
+    "description": "Alliant le dynamisme du sportswear à une touche de féminité audacieuse, ces baskets blanches revisitées sont la pièce maîtresse d'un look à la fois urbain et sophistiqué. Leur empeigne en cuir de qualité, ponctuée d'empiècements en suède gris clair, épouse une silhouette de running au confort optimal, sublimée par une semelle épaisse et galbée aux accents colorés. Leur atout charme réside dans le logo entrelacé en relief et les touches vibrantes de rose fuchsia qui colorent le talon et la languette, apportant une personnalité pétillante à ce modèle résolument tendance. Faciles à associer avec un jean boyfriend, un short en maille ou même une jupe plissée, ces sneakers sont conçues pour celles qui veulent conjuguer style affirmé et bien-être tout au long de la journée.",
+    "purchasedPrice": 7000,
+    "price": 9000,
+    "stock": 50,
+    "category": "Tennis femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "rose",
+        "colorHex": "#d4366d",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "vert sombre",
+        "colorHex": "#1d282e",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "noir",
+        "colorHex": "#212028",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/007.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/008.jpeg"
+      },
+      {
+        "image": "./images/009.jpeg"
+      },
+      {
+        "image": "./images/010.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Sneakers sportwears",
+    "description": "Conjuguant un esprit sportif moderne avec un confort quotidien absolu, ces baskets à la silhouette épurée et aérodynamique sont l’essence même de la chaussure « tout-terrain » chic. Conçues avec une empeigne en cuir souple d’excellente qualité, leur design repose sur un laçage classique ajustable et des surpiqûres soignées qui dessinent des lignes élégantes sur l'avant-pied. La véritable signature de ce modèle réside dans sa semelle extérieure épaisse et profilée, qui offre un excellent amorti et une stabilité parfaite pour les longues marches, tout en apportant une touche tendance à la silhouette. Grâce à leur style intemporel, ces sneakers unissent performance et esthétique ; elles s'adaptent à toutes les tenues, d'un jogging décontracté à un jean droit, voire une jupe midi, pour un look urban-chic sans effort. Une pièce de choix pour une garde-robe minimaliste et essentielle.",
+    "purchasedPrice": 7000,
+    "price": 9000,
+    "stock": 50,
+    "category": "Tennis femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "rouge",
+        "colorHex": "#f80501",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "vert",
+        "colorHex": "#4d6251",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "noir",
+        "colorHex": "#394553",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "rose",
+        "colorHex": "#efc0c8",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "noir vif",
+        "colorHex": "#15161a",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/011.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/012.jpeg"
+      },
+      {
+        "image": "./images/013.jpeg"
+      },
+      {
+        "image": "./images/031.jpeg"
+      },
+      {
+        "image": "./images/032.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Sandales deux brides",
+    "description": "Pensées pour l'été comme pour les escapades urbaines, ces sandales deux brides s'imposent comme une référence incontournable du vestiaire casual chic. Leur construction met en valeur une empeigne en cuir grainé d'une qualité irréprochable, agrémentée de deux larges sangles ajustables qui se ferment grâce à des boucles métalliques rectangulaires au design emblématique. Le confort n'est pas en reste : la semelle intérieure épousant la voûte plantaire assure un maintien optimal, tandis que la semelle extérieure, pourvue d'une sculpture en relief sur sa totalité, garantit une adhérence et une durabilité exemplaires au quotidien. Faciles à enfiler, ces mules habillent avec une élégance décontractée une multitude de tenues estivales, du short en lin à la robe fluide. Un modèle à la fois fonctionnel et raffiné, qui joue la carte de la simplicité haut de gamme pour une allure soignée en toutes circonstances.",
+    "purchasedPrice": 8000,
+    "price": 10000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "noir",
+        "colorHex": "#373634",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "colorName": "marron",
+        "colorHex": "#86390f",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "colorName": "rose",
+        "colorHex": "#d12f61",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/014.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/015.jpeg"
+      },
+      {
+        "image": "./images/016.jpeg"
+      },
+      {
+        "image": "./images/017.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Mules plate",
+    "description": "L'éclat discret de ces mules plates en fait l'accessoire idéal pour sublimer une tenue de jour comme de soir. Leur empeigne en cuir métallisé doré, à la texture douce et brillante, est rehaussée avec audace par un nœud XXL intégralement parsemé de cristaux scintillants. Ce motif précieux, composé d'un enchevêtrement de strass aux reflets changeants, capte la lumière pour offrir un rendu d'une grande sophistication. Sous le pied, une semelle intérieure en cuir clair, soigneusement matelassée, procure une sensation de confort agréable pour de longues heures de marche. Dotées d'un bout carré ouvert et d'une construction plate, elles se glissent facilement sous le pied tout en structurant élégamment la silhouette. Une proposition raffinée qui insuffle une touche de faste à une robe de cocktail ou qui apporte du caractère à une tenue plus décontractée.",
+    "purchasedPrice": 8000,
+    "price": 10000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "dorée",
+        "colorHex": "#d3caa9",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43"
+        ]
+      },
+      {
+        "colorName": "marron",
+        "colorHex": "#804024",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/018.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/019.jpeg"
+      },
+      {
+        "image": "./images/020.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Sandales à bride arrière",
+    "description": "D'une élégance feutrée et résolument tendance, ces sandales à brides arrière séduisent par leur texture veloutée qui invite à la douceur. Leur design audacieux mise sur un bout carré géométrique, parfaitement mis en valeur par un large nœud en velours posé sur le dessus du pied, apportant un charme romantique et sophistiqué. Une fine lanière entoure la cheville pour garantir un bon maintien, tandis que la semelle intérieure profilée promet un confort agréable au quotidien. Sur l'envers, une semelle extérieure en caoutchouc noir, pourvue d'inserts antidérapants, assure une adhérence sûre sur tous les sols. Cette chaussure flatteuse se marie aussi bien avec une robe fluide pour une occasion spéciale qu'avec un jean et un blazer pour réhausser une tenue de ville.",
+    "purchasedPrice": 6000,
+    "price": 8000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "rouge",
+        "colorHex": "#33040e",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "colorName": "noir",
+        "colorHex": "#090909",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "colorName": "marron",
+        "colorHex": "#432514",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/021.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/022.jpeg"
+      },
+      {
+        "image": "./images/023.jpeg"
+      },
+      {
+        "image": "./images/024.jpeg"
+      },
+      {
+        "image": "./images/025.jpeg"
+      },
+      {
+        "image": "./images/026.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Sandales à bride arrière",
+    "description": "L'essence même de la sneaker casual-chic se retrouve dans ce modèle à la silhouette résolument contemporaine. Une empeigne en cuir lisse de belle facture accueille des surpiqûres soignées et un laçage classique qui s'ajuste parfaitement au cou-de-pied. La touche d'originalité provient de son blason latéral au design intemporel, subtilement agrémenté d'une petite plaque métallique pour un effet délicatement sophistiqué. Pensée pour un confort au long cours, une semelle extérieure à la fois épaisse et galbée assure un excellent amorti lors de vos déplacements quotidiens. Ces baskets polyvalentes apportent instantanément une allure moderne et dynamique : elles s'associent aussi bien avec un pantalon chino pour un look de bureau décontracté qu'avec un short pour flâner en ville.",
+    "purchasedPrice": 7000,
+    "price": 9000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "PRESIDENTIEL Joël groupe",
+    "variants": [
+      {
+        "colorName": "bleu",
+        "colorHex": "#8eacc6",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "rose",
+        "colorHex": "#e41d82",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "blanc",
+        "colorHex": "#d2cdc9",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "colorName": "rouge",
+        "colorHex": "#a30c1c",
+        "size": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/027.jpeg",
+        "markAsThumbnail": true
+      },
+      {
+        "image": "./images/028.jpeg"
+      },
+      {
+        "image": "./images/029.jpeg"
+      },
+      {
+        "image": "./images/030.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Mule à bandes entrecroisées",
+    "description": "L'alliance parfaite entre un confort absolu et un minimalisme étudié se matérialise dans cette sandale à la texture unique, où de larges bandes de tissu côtelé s'entrelacent avec une précision presque architecturale pour épouser la forme du pied. Le dessus, d'une souplesse remarquable, contraste avec la semelle intérieure lisse et la finition soignée des coutures apparentes, offrant une expérience de marche aussi légère que sécurisante. Conçu pour l'homme moderne qui privilégie l'authenticité des matières sans sacrifier l'allure, ce modèle impose une élégance discrète et décontractée, aussi à l'aise sur un sol carrelé qu'à l'extérieur sur un terrain sablonneux. Une pièce qui réinvente le classicisme de la mule, faisant de chaque pas une déclaration de style sobre et affirmée.",
+    "purchasedPrice": 18000,
+    "price": 21000,
+    "stock": 50,
+    "category": "Babouches homme",
+    "supplier": "Awcy",
+    "images": [
+      {
+        "image": "./images/033.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "mule à brides croisées bicolores",
+    "description": "L'élégance se réinvente avec cette mule aux lignes contemporaines, dont le design audacieux repose sur un jeu de superpositions de matières et de tonalités parfaitement maîtrisé. Deux larges lanières en cuir de première qualité s'entrecroisent délicatement sur le cou-de-pied : l'une, d'un bleu ciel doux et lumineux, s'habille d'un grainé fin, tandis que l'autre, dans un gris anthracite profond, arbore une texture noble embossée simulant un motif reptile, rehaussée d'une fine boucle métallique pour une touche de raffinement industriel. La robustesse n'est pas en reste, grâce à une semelle extérieure épaisse en caoutchouc noir qui assure une adhérence irréprochable et une durabilité à toute épreuve, tandis que la semelle intérieure, soigneusement galbée, promet un confort de marche immédiat. Présentées sur des embauchoirs en bois massif, gages d'un maintien de forme irréprochable, ces sandales incarnent l'excellence de l'artisanat chaussant. Une pièce résolument masculine, sophistiquée et décontractée, qui apporte une touche d'originalité chic à toutes vos tenues estivales.",
+    "purchasedPrice": 18000,
+    "price": 21000,
+    "stock": 50,
+    "category": "Babouches homme",
+    "supplier": "Awcy",
+    "images": [
+      {
+        "image": "./images/034.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "sandale mule en cuir",
+    "description": "Son charme opère dès le premier regard grâce à un empiècement large et géométrique qui vient habiller le cou-de-pied : une pièce en cuir blanc au motif croco prononcé, dont la texture en relief contraste avec subtilité avec la base en cuir lisse de teinte naturelle. Ce jeu de matières et de couleurs s'accompagne d'ingénieuses perforations rondes sur le côté, qui non seulement apportent une touche aérée et contemporaine, mais participent aussi au confort thermique de la chaussure. Une série de surpiqûres blanches, parfaitement régulières, soulignent les contours de l'empiècement avec une précision artisanale. Sous le pied, la semelle intérieure au fini lisse assure une sensation de douceur absolue, tandis que la semelle extérieure fine et profilée garantit une agilité naturelle. Une pièce versatile qui marie avec bonheur l'élégance d'une sandale en cuir et le confort d'un chausson, parfaite pour accompagner un jean blanc, une robe légère ou un short en lin, pour une allure bohème chic et résolument tendance.",
+    "purchasedPrice": 18000,
+    "price": 21000,
+    "stock": 50,
+    "category": "Babouches femme",
+    "supplier": "Awcy",
+    "images": [
+      {
+        "image": "./images/035.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/036.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/037.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/038.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/040.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/041.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/042.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/043.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/044.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/045.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/046.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/047.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/048.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/049.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/050.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/051.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/052.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/053.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/054.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/055.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/056.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/057.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/058.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/059.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/060.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/061.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/062.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/063.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/064.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/065.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/066.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/067.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  },
+  {
+    "name": "Robe imprimé tie-dye à manches kimono et taille smockée",
+    "description": "Une véritable ode à la liberté et à la féminité se dégage de cette somptueuse robe longue, dont l'imprimé aux nuances profondes et contrastées captive le regard en évoquant une élégance naturelle et pleine de caractère. La coupe, savamment étudiée pour flatter toutes les silhouettes, débute par une encolure cache-cœur en V qui dévoile subtilement le décolleté, tandis que ses manches larges, évoquant l'ampleur d'un kimono, confèrent une allure aérienne et une liberté de mouvement absolue. Sa véritable prouesse réside dans sa taille marquée par une bande smockée (élastiquée et froncée), qui sculpte naturellement la silhouette tout en offrant un confort optimal et une adaptation parfaite à votre morphologie, avant de laisser s'épanouir une jupe vaporeuse et longue jusqu'au sol, qui ondule avec grâce au moindre pas. Confectionnée dans un tissu souple et fluide aux motifs artistiques, cette robe se suffit à elle-même : idéale pour une journée ensoleillée, une escapade balnéaire ou une soirée estivale, elle n'a besoin d'aucun accessoire superflu pour imposer une allure chic, décontractée et résolument singulière.",
+    "purchasedPrice": 5500,
+    "price": 8000,
+    "stock": 50,
+    "category": "Robes pagnes femme",
+    "supplier": "Cya collection",
+    "variants": [
+      {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "image": "./images/068.jpeg",
+        "markAsThumbnail": true
+      }
+    ]
+  }
+]

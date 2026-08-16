@@ -62,11 +62,7 @@ public class CategoryImageService {
     }
 
     private void validateSize(String objectKey) {
-        long size = r2StorageService.headObjectSize(objectKey);
-        if (size > maxSizeBytes) {
-            r2StorageService.deleteObject(objectKey);
-            throw new IllegalArgumentException("Le fichier envoyé dépasse la taille maximale autorisée");
-        }
+        r2StorageService.enforceMaxSize(objectKey, maxSizeBytes);
     }
 
     private CategoryResponse toResponse(Category category) {

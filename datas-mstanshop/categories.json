@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Articles femmes",
+    "description": "Rajoutez une touche d'élégance en marchant avec notre collection féminine",
+    "bannerImagePath": "./images/chaussures_femmes_banner.jpg",
+    "subCategories": [
+      {
+        "name": "Tennis femme",
+        "description": "Emmenez les partout ou vous souhaitez",
+        "bannerImagePath": "./images/tennis_femmes_banner.jpg"
+      },
+      {
+        "name": "Babouches femme",
+        "description": "L'élégance même dans l'absolue simplicité !",
+        "bannerImagePath": "./images/sandales_femmes_banner.jpg"
+      },
+      {
+        "name": "Robes pagnes femme",
+        "description": "Laissez éclater votre beauté avec des tissus de chez nous",
+        "bannerImagePath": "./images/robes_pagne_femmes_banner.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Articles Hommes",
+    "description": "L'assurance d'un homme qui sait où il va commence par une foulée aussi maîtrisée que son style.",
+    "bannerImagePath": "./images/chaussures_hommes_banner.jpg",
+    "subCategories": [
+      {
+        "name": "Tennis homme",
+        "description": "Emmenez les partout ou vous souhaitez",
+        "bannerImagePath": "./images/tennis_hommes_banner.jpg"
+      },
+      {
+        "name": "Babouches homme",
+        "description": "L'élégance même dans l'absolue simplicité !",
+        "bannerImagePath": "./images/sandales_hommes_banner.jpg"
+      }
+    ]
+  }
+]

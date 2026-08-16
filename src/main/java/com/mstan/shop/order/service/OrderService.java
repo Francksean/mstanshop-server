@@ -9,7 +9,6 @@ import com.mstan.shop.common.exception.InsufficientStockException;
 import com.mstan.shop.common.exception.InvalidPromoCodeException;
 import com.mstan.shop.common.exception.OrderCannotBeCancelledException;
 import com.mstan.shop.common.exception.ResourceNotFoundException;
-import com.mstan.shop.common.notification.SmsService;
 import com.mstan.shop.whatsapp.service.GenukaWhatsAppService;
 import com.mstan.shop.common.util.CategoryPromotionResolver;
 import com.mstan.shop.common.util.CurrencyFormatter;
@@ -76,7 +75,6 @@ public class OrderService {
     private final ProductMapper productMapper;
     private final OrderNumberGenerator orderNumberGenerator;
     private final EmailService emailService;
-    private final SmsService smsService;
     private final GenukaWhatsAppService whatsAppService;
 
     @Transactional
@@ -205,7 +203,8 @@ public class OrderService {
                 if (variant.getStock() < quantity) {
                     throw new InsufficientStockException(
                             "Stock insuffisant pour le produit \"" + product.getName() + "\" (couleur : "
-                                    + (variant.getColorName() != null ? variant.getColorName() : variant.getColorHex())
+                                    + (variant.getColorName() != null ? variant.getColorName()
+                                            : variant.getColorHex() != null ? variant.getColorHex() : variant.getSize())
                                     + ", disponible : " + variant.getStock() + ")"
                     );
                 }
@@ -284,7 +283,7 @@ public class OrderService {
         return payment;
     }
 
-    /** Guests without an email only get SMS/WhatsApp confirmation, never a null-email crash. */
+    /** Guests without an email only get WhatsApp confirmation, never a null-email crash. */
     private String resolveNotificationEmail(Order order) {
         return order.getUser() != null ? order.getUser().getEmail() : order.getGuestEmail();
     }
@@ -294,7 +293,6 @@ public class OrderService {
         if (email != null) {
             emailService.sendOrderConfirmation(email, toEmailData(order));
         }
-        smsService.sendOrderConfirmation(phone, order.getOrderNumber(), totalFormatted);
         whatsAppService.sendOrderConfirmation(order, phone, totalFormatted);
     }
 
@@ -405,7 +403,6 @@ public class OrderService {
         if (email != null) {
             emailService.sendPaymentFailed(email, order.getOrderNumber());
         }
-        smsService.sendPaymentFailed(phone, order.getOrderNumber());
         whatsAppService.sendPaymentFailed(order, phone);
     }
 
@@ -505,7 +502,6 @@ public class OrderService {
         if (email != null) {
             emailService.sendOrderCancellation(email, toEmailData(order));
         }
-        smsService.sendOrderCancellation(phone, order.getOrderNumber());
         whatsAppService.sendOrderCancellation(order, phone);
     }
 
