@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/><title>Échec du paiement</title></head>
+<body style="margin:0;padding:0;background-color:#f4f4f4;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
+    <tr>
+        <td align="center" style="padding:32px 16px;">
+            <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;max-width:600px;">
+                <tr><td th:insert="~{email/fragments :: header}"></td></tr>
+                <tr>
+                    <td style="padding:32px;font-family:Helvetica,Arial,sans-serif;color:#333333;">
+                        <h1 style="font-size:20px;margin:0 0 8px;">Le paiement n'a pas abouti</h1>
+                        <p style="font-size:14px;line-height:1.6;margin:0 0 24px;">
+                            Le paiement de votre commande <strong th:text="${orderNumber}">CMD-XXX</strong> a échoué
+                            ou n'a pas été confirmé à temps. Aucun montant n'a été débité, et le stock réservé a été
+                            libéré. Vous pouvez réessayer à tout moment.
+                        </p>
+                        <table th:replace="~{email/fragments :: button(${retryUrl}, 'Réessayer le paiement')}"></table>
+                        <p style="font-size:14px;line-height:1.6;margin:24px 0 0;">
+                            L'équipe MSTAN Shop
+                        </p>
+                    </td>
+                </tr>
+                <tr><td th:insert="~{email/fragments :: footer}"></td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/><title>Annulation de commande</title></head>
+<body style="margin:0;padding:0;background-color:#f4f4f4;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
+    <tr>
+        <td align="center" style="padding:32px 16px;">
+            <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;max-width:600px;">
+                <tr><td th:insert="~{email/fragments :: header}"></td></tr>
+                <tr>
+                    <td style="padding:32px;font-family:Helvetica,Arial,sans-serif;color:#333333;">
+                        <h1 style="font-size:20px;margin:0 0 8px;">Commande annulée</h1>
+                        <p style="font-size:14px;line-height:1.6;margin:0 0 24px;">
+                            Votre commande <strong th:text="${orderNumber}">CMD-XXX</strong> a bien été annulée.
+                            Le stock des articles a été recrédité.
+                        </p>
+
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #eeeeee;">
+                            <tr th:each="item : ${items}">
+                                <td style="padding:16px 0;border-bottom:1px solid #eeeeee;" width="64">
+                                    <img th:if="${item.thumbnailUrl}" th:src="${item.thumbnailUrl}" width="56" height="56"
+                                         style="width:56px;height:56px;object-fit:cover;border-radius:4px;background-color:#f4f4f4;" alt=""/>
+                                </td>
+                                <td style="padding:16px 0 16px 12px;border-bottom:1px solid #eeeeee;font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#333333;">
+                                    <span th:text="${item.name}">Produit</span>
+                                    <span th:if="${item.colorLabel}" style="color:#888888;" th:text="'(' + ${item.colorLabel} + ')'"></span>
+                                    <br/>
+                                    <span style="color:#888888;font-size:13px;">
+                                        Qté : <span th:text="${item.quantity}">1</span> &times; <span th:text="${item.unitPriceFormatted}">0 FCFA</span>
+                                    </span>
+                                </td>
+                                <td style="padding:16px 0;border-bottom:1px solid #eeeeee;font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#333333;text-align:right;white-space:nowrap;">
+                                    <span th:text="${item.lineTotalFormatted}">0 FCFA</span>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#333333;">
+                            <tr>
+                                <td style="padding:12px 0 0;font-weight:bold;font-size:16px;">Total annulé</td>
+                                <td style="padding:12px 0 0;text-align:right;font-weight:bold;font-size:16px;" th:text="${totalFormatted}">0 FCFA</td>
+                            </tr>
+                        </table>
+
+                        <table th:replace="~{email/fragments :: button(${ordersUrl}, 'Voir mes commandes')}"></table>
+
+                        <p style="font-size:14px;line-height:1.6;margin:24px 0 0;">
+                            L'équipe MSTAN Shop
+                        </p>
+                    </td>
+                </tr>
+                <tr><td th:insert="~{email/fragments :: footer}"></td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

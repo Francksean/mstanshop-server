@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!--/* Shared header: logo bar. Included via th:insert in every email template. */-->
+<table th:fragment="header" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#1a1a1a;">
+    <tr>
+        <td style="padding:24px 32px;">
+            <span style="font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:bold;letter-spacing:2px;color:#ffffff;">MSTAN SHOP</span>
+        </td>
+    </tr>
+</table>
+
+<!--/* Shared footer. */-->
+<table th:fragment="footer" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
+    <tr>
+        <td style="padding:24px 32px;font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#888888;text-align:center;">
+            MSTAN Shop &mdash; Cet email vous a été envoyé suite à une action sur votre compte.<br/>
+            Si vous n'êtes pas à l'origine de cette action, vous pouvez ignorer ce message.
+        </td>
+    </tr>
+</table>
+
+<!--/* Shared CTA button. Params: buttonUrl, buttonLabel. */-->
+<table th:fragment="button(buttonUrl, buttonLabel)" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;">
+    <tr>
+        <td style="border-radius:4px;background-color:#1a1a1a;">
+            <a th:href="${buttonUrl}" th:text="${buttonLabel}"
+               style="display:inline-block;padding:14px 28px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:4px;">
+                Bouton
+            </a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+package com.mstan.shop.review.dto;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
+public record CreateReviewRequest(
+
+        @NotNull(message = "La note est obligatoire")
+        @Min(value = 1, message = "La note doit être comprise entre 1 et 5")
+        @Max(value = 5, message = "La note doit être comprise entre 1 et 5")
+        Integer rating,
+
+        @Size(max = 2000, message = "Le commentaire ne peut pas dépasser 2000 caractères")
+        String comment
+) {
+}
