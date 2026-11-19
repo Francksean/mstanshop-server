@@ -47,6 +47,11 @@ public class ProductController {
         return productService.getById(id, isAdmin(user));
     }
 
+    @GetMapping("/by-slug/{slug}")
+    public ProductDetailResponse getBySlug(@PathVariable String slug, @AuthenticationPrincipal SecurityUser user) {
+        return productService.getBySlug(slug, isAdmin(user));
+    }
+
     private boolean isAdmin(SecurityUser user) {
         return user != null && user.getAuthorities().stream()
                 .anyMatch(authority -> authority.getAuthority().equals("ROLE_ADMIN"));

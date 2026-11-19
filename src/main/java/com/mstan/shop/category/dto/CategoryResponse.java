@@ -4,6 +4,7 @@ import com.mstan.shop.promo.entity.PromoDiscountType;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.List;
 import java.util.UUID;
 
 public record CategoryResponse(
@@ -19,6 +20,7 @@ public record CategoryResponse(
         BigDecimal promoDiscountValue,
         Instant promoEndsAt,
         UUID parentId,
-        String parentName
+        String parentName,
+        List<CategoryResponse> subcategories
 ) {
 }

@@ -35,7 +35,7 @@ public class WhatsAppTemplate extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private WhatsAppTemplateEventCode eventCode;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT")
     private String components;
 
     @Enumerated(EnumType.STRING)

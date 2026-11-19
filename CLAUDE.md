@@ -47,7 +47,7 @@ App runs on `http://localhost:8080`. Swagger UI at `/swagger-ui.html`, OpenAPI J
 - `product/` — catalog, image upload, variants, Open Graph sharing
 - `cart/` — persistent cart, guest cart merge on login/register
 - `order/` — orders, stock adjustment, history, guest orders
-- `payment/` — payment records + Campay mobile money integration
+- `payment/` — payment records + Fapshi mobile money integration
 - `promo/` — promo codes / category promotions
 - `review/` — product reviews
 - `stock/` — scheduled low-stock alert job (`StockAlertScheduler`, cron via `app.stock.alert-cron`)

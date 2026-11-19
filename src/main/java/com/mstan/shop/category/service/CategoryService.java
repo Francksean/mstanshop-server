@@ -41,15 +41,45 @@ public class CategoryService {
         Map<UUID, Long> countsByCategoryId = productRepository.countActiveProductsGroupedByCategory().stream()
                 .collect(Collectors.toMap(CategoryProductCountProjection::getCategoryId, CategoryProductCountProjection::getCnt));
 
-        return categoryRepository.findAll().stream()
-                .map(category -> categoryMapper.toResponse(category, countsByCategoryId.getOrDefault(category.getId(), 0L)))
+        List<Category> allCategories = categoryRepository.findAll();
+
+        Map<UUID, List<Category>> childrenByParentId = allCategories.stream()
+                .filter(category -> category.getParent() != null)
+                .collect(Collectors.groupingBy(category -> category.getParent().getId()));
+
+        return allCategories.stream()
+                .filter(category -> category.getParent() == null)
+                .map(parent -> buildParentResponse(parent, childrenByParentId.getOrDefault(parent.getId(), List.of()), countsByCategoryId))
                 .toList();
+    }
+
+    private CategoryResponse buildParentResponse(Category parent, List<Category> children, Map<UUID, Long> countsByCategoryId) {
+        List<CategoryResponse> subcategoryResponses = children.stream()
+                .map(child -> categoryMapper.toResponse(child, countsByCategoryId.getOrDefault(child.getId(), 0L)))
+                .toList();
+
+        long rolledUpCount = countsByCategoryId.getOrDefault(parent.getId(), 0L)
+                + subcategoryResponses.stream().mapToLong(CategoryResponse::productCount).sum();
+
+        return categoryMapper.toResponse(parent, rolledUpCount, subcategoryResponses);
     }
 
     @Transactional(readOnly = true)
     public CategoryResponse getById(UUID id) {
         Category category = findCategory(id);
-        return categoryMapper.toResponse(category, productRepository.countByCategoryIdAndActiveTrue(id));
+
+        if (category.getParent() != null) {
+            return categoryMapper.toResponse(category, productRepository.countByCategoryIdAndActiveTrue(id));
+        }
+
+        List<CategoryResponse> subcategoryResponses = categoryRepository.findByParentId(id).stream()
+                .map(child -> categoryMapper.toResponse(child, productRepository.countByCategoryIdAndActiveTrue(child.getId())))
+                .toList();
+
+        long rolledUpCount = productRepository.countByCategoryIdAndActiveTrue(id)
+                + subcategoryResponses.stream().mapToLong(CategoryResponse::productCount).sum();
+
+        return categoryMapper.toResponse(category, rolledUpCount, subcategoryResponses);
     }
 
     @Transactional

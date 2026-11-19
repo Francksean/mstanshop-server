@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.UUID;
 
 @Tag(name = "Cart", description = "Gestion du panier de l'utilisateur authentifié")
@@ -44,6 +45,14 @@ public class CartController {
             @Valid @RequestBody AddCartItemRequest request
     ) {
         return ResponseEntity.status(HttpStatus.CREATED).body(cartService.addItem(user.getId(), request));
+    }
+
+    @PostMapping("/merge-guest-items")
+    public ResponseEntity<CartResponse> mergeGuestItems(
+            @AuthenticationPrincipal SecurityUser user,
+            @Valid @RequestBody List<AddCartItemRequest> cartItems
+    ) {
+        return ResponseEntity.ok(cartService.mergeGuestItems(user.getId(), cartItems));
     }
 
     @PutMapping("/items/{itemId}")

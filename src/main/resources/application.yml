@@ -50,13 +50,16 @@ app:
     low-threshold: ${STOCK_LOW_THRESHOLD:5}
     alert-cron: ${STOCK_ALERT_CRON:0 0 8 * * *}
   payment:
-    campay:
-      base-url: ${CAMPAY_BASE_URL:https://demo.campay.net/api}
-      api-key: ${CAMPAY_API_KEY:}
-      webhook-key: ${CAMPAY_WEBHOOK_KEY:}
+    fapshi:
+      base-url: ${FAPSHI_BASE_URL:https://sandbox.fapshi.com}
+      api-user: ${FAPSHI_API_USER:}
+      api-key: ${FAPSHI_API_KEY:}
+      webhook-secret: ${FAPSHI_WEBHOOK_SECRET:}
   notification:
     genuka:
       base-url: ${GENUKA_BASE_URL:https://wa.genuka.com/api/v1}
       api-key: ${GENUKA_API_KEY:}
       connection-id: ${GENUKA_CONNECTION_ID:}
       webhook-secret: ${GENUKA_WEBHOOK_SECRET:}
+  whatsapp:
+    template-sync-cron: ${WHATSAPP_TEMPLATE_SYNC_CRON:0 0 * * * *}

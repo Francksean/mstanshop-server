@@ -21,8 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Reçoit les statuts de livraison WhatsApp (sent/delivered/read/failed) envoyés par Genuka.
- * Signature vérifiée avant tout traitement (contrairement au webhook CamPay, non signé, qui
- * re-vérifie server-to-server à la place) — une signature invalide est rejetée en 401 pour
+ * Signature vérifiée avant tout traitement — une signature invalide est rejetée en 401 pour
  * rester visible dans le journal de livraisons Genuka. Une fois la signature validée, toute
  * erreur de traitement interne est journalisée et absorbée (retour 200) pour éviter une
  * tempête de retries côté Genuka.

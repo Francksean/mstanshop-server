@@ -24,3 +24,6 @@ Thumbs.db
 ### App ###
 uploads/
 .env*
+env.txt
+
+datas-mstanshop/

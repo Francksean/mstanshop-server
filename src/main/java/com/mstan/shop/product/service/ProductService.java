@@ -96,12 +96,17 @@ public class ProductService {
         return productMapper.toDetailResponse(product, averageRating, reviewCount, includePurchasePrice);
     }
 
+    @Transactional(readOnly = true)
+    public ProductDetailResponse getBySlug(String slug, boolean includePurchasePrice) {
+        Product product = productRepository.findBySlug(slug)
+                .orElseThrow(() -> ResourceNotFoundException.of("Produit", slug));
+        Double averageRating = reviewRepository.findAverageRatingByProductId(product.getId());
+        long reviewCount = reviewRepository.countByProductId(product.getId());
+        return productMapper.toDetailResponse(product, averageRating, reviewCount, includePurchasePrice);
+    }
+
     @Transactional
     public ProductDetailResponse create(ProductCreateRequest request) {
-        if (productRepository.existsByNameIgnoreCase(request.name())) {
-            throw new DuplicateResourceException("Un produit avec ce nom existe déjà");
-        }
-
         Category category = findCategory(request.categoryId());
         Supplier supplier = findSupplier(request.supplierId());
 
@@ -113,7 +118,7 @@ public class ProductService {
         product.setStock(request.stock());
         product.setCategory(category);
         product.setSupplier(supplier);
-        product.setSlug(SlugUtil.slugify(request.name()));
+        product.setSlug(generateUniqueSlug(request.name()));
         product.setActive(true);
         productRepository.save(product);
 
@@ -212,7 +217,7 @@ public class ProductService {
         product.setStock(request.stock());
         product.setCategory(category);
         product.setSupplier(supplier);
-        product.setSlug(SlugUtil.slugify(request.name()));
+        product.setSlug(generateUniqueSlugExcluding(request.name(), id));
         product.setActive(request.active());
         productRepository.save(product);
 
@@ -246,6 +251,38 @@ public class ProductService {
 
         result.sort(java.util.Comparator.comparing(LowStockItemResponse::productName));
         return result;
+    }
+
+    private String generateUniqueSlug(String name) {
+        String baseSlug = SlugUtil.slugify(name);
+        String candidateSlug = baseSlug;
+        int counter = 2;
+
+        while (productRepository.existsBySlug(candidateSlug)) {
+            candidateSlug = baseSlug + "-" + counter;
+            counter++;
+        }
+
+        return candidateSlug;
+    }
+
+    private String generateUniqueSlugExcluding(String name, UUID excludeProductId) {
+        String baseSlug = SlugUtil.slugify(name);
+        Product currentProduct = findProduct(excludeProductId);
+
+        if (currentProduct.getSlug().equals(baseSlug)) {
+            return baseSlug;
+        }
+
+        String candidateSlug = baseSlug;
+        int counter = 2;
+
+        while (productRepository.existsBySlug(candidateSlug)) {
+            candidateSlug = baseSlug + "-" + counter;
+            counter++;
+        }
+
+        return candidateSlug;
     }
 
     Product findProduct(UUID id) {

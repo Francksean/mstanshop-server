@@ -6,58 +6,60 @@ import com.mstan.shop.order.service.OrderService;
 import com.mstan.shop.payment.entity.Payment;
 import com.mstan.shop.payment.entity.PaymentStatus;
 import com.mstan.shop.payment.repository.PaymentRepository;
-import com.mstan.shop.payment.service.CamPayPaymentService;
-import com.mstan.shop.payment.service.CamPayWebhookVerifier;
+import com.mstan.shop.payment.service.FapshiPaymentService;
+import com.mstan.shop.payment.service.FapshiWebhookVerifier;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
 /**
- * L'app CamPay est configurée en callback POST/JSON. Chaque payload porte un champ "signature"
- * (JWT HS256 signé avec la clé webhook de l'app) — vérifié avant tout traitement. Une fois la
- * signature validée, le statut est tout de même re-vérifié server-to-server via
- * {@link CamPayPaymentService#checkStatus} plutôt que de faire confiance au seul champ "status"
- * du payload, par défense en profondeur.
+ * Webhook Fapshi : le header "x-wh-secret" (secret statique du dashboard) est vérifié avant tout
+ * traitement. Le statut est ensuite re-confirmé server-to-server via
+ * {@link FapshiPaymentService#checkStatus} plutôt que de faire confiance au payload. Fapshi ne
+ * rejoue pas les webhooks : le polling ({@code OrderService#refreshPaymentStatus}) sert de filet.
  */
 @Slf4j
-@Tag(name = "Payments - CamPay Webhook", description = "Callback CamPay (signature JWT vérifiée, puis statut re-confirmé côté serveur)")
+@Tag(name = "Payments - Fapshi Webhook", description = "Callback Fapshi (secret vérifié, puis statut re-confirmé côté serveur)")
 @RestController
-@RequestMapping("/api/payments/campay/webhook")
+@RequestMapping("/api/payments/fapshi/webhook")
 @RequiredArgsConstructor
-public class CamPayWebhookController {
+public class FapshiWebhookController {
 
     private final PaymentRepository paymentRepository;
-    private final CamPayPaymentService camPayPaymentService;
-    private final CamPayWebhookVerifier camPayWebhookVerifier;
+    private final FapshiPaymentService fapshiPaymentService;
+    private final FapshiWebhookVerifier fapshiWebhookVerifier;
     private final OrderService orderService;
     private final ObjectMapper objectMapper;
 
     @PostMapping
-    public ResponseEntity<Void> handleWebhook(@RequestBody String rawPayload) {
+    public ResponseEntity<Void> handleWebhook(
+            @RequestHeader(value = "x-wh-secret", required = false) String secret,
+            @RequestBody String rawPayload
+    ) {
+        if (!fapshiWebhookVerifier.isValid(secret)) {
+            log.warn("Secret webhook Fapshi invalide, webhook rejeté");
+            return ResponseEntity.status(401).build();
+        }
+
         JsonNode node;
         try {
             node = objectMapper.readTree(rawPayload);
         } catch (Exception e) {
-            log.warn("Impossible de parser le payload du webhook CamPay", e);
+            log.warn("Impossible de parser le payload du webhook Fapshi", e);
             return ResponseEntity.ok().build();
-        }
-
-        String signature = node.hasNonNull("signature") ? node.get("signature").asText() : null;
-        if (!camPayWebhookVerifier.isValid(signature)) {
-            log.warn("Signature CamPay invalide, webhook rejeté");
-            return ResponseEntity.status(401).build();
         }
 
         Payment payment = resolvePayment(node);
         if (payment == null) {
-            log.warn("Webhook CamPay reçu sans référence exploitable ou inconnue, ignoré : {}", rawPayload);
+            log.warn("Webhook Fapshi reçu sans référence exploitable ou inconnue, ignoré : {}", rawPayload);
             return ResponseEntity.ok().build();
         }
         if (payment.getProviderReference() == null) {
@@ -65,27 +67,27 @@ public class CamPayWebhookController {
             return ResponseEntity.ok().build();
         }
 
-        PaymentStatus status = camPayPaymentService.checkStatus(payment.getProviderReference());
+        PaymentStatus status = fapshiPaymentService.checkStatus(payment.getProviderReference());
         if (status == PaymentStatus.SUCCESSFUL) {
             orderService.confirmPayment(payment.getOrder().getId(), payment.getProviderReference());
         } else if (status == PaymentStatus.FAILED) {
-            orderService.failPayment(payment.getOrder().getId(), payment.getProviderReference(), "Paiement refusé ou expiré (CamPay)");
+            orderService.failPayment(payment.getOrder().getId(), payment.getProviderReference(), "Paiement refusé ou expiré (Fapshi)");
         }
 
         return ResponseEntity.ok().build();
     }
 
-    /** Essaie d'abord la "reference" CamPay, puis notre "external_reference" en repli. */
+    /** Essaie d'abord le "transId" Fapshi, puis notre "externalId" en repli. */
     private Payment resolvePayment(JsonNode node) {
-        if (node.hasNonNull("reference")) {
-            Payment payment = paymentRepository.findByProviderReference(node.get("reference").asText()).orElse(null);
+        if (node.hasNonNull("transId")) {
+            Payment payment = paymentRepository.findByProviderReference(node.get("transId").asText()).orElse(null);
             if (payment != null) {
                 return payment;
             }
         }
-        if (node.hasNonNull("external_reference")) {
+        if (node.hasNonNull("externalId")) {
             try {
-                return paymentRepository.findByExternalReference(UUID.fromString(node.get("external_reference").asText()))
+                return paymentRepository.findByExternalReference(UUID.fromString(node.get("externalId").asText()))
                         .orElse(null);
             } catch (IllegalArgumentException e) {
                 return null;

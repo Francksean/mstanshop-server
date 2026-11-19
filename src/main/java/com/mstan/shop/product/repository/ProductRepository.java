@@ -11,7 +11,7 @@ import java.util.UUID;
 
 public interface ProductRepository extends JpaRepository<Product, UUID>, JpaSpecificationExecutor<Product> {
 
-    boolean existsByNameIgnoreCase(String name);
+    boolean existsBySlug(String slug);
 
     Optional<Product> findBySlug(String slug);
 

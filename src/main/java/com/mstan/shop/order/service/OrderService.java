@@ -32,7 +32,7 @@ import com.mstan.shop.payment.entity.Payment;
 import com.mstan.shop.payment.entity.PaymentMethod;
 import com.mstan.shop.payment.entity.PaymentStatus;
 import com.mstan.shop.payment.repository.PaymentRepository;
-import com.mstan.shop.payment.service.CamPayPaymentService;
+import com.mstan.shop.payment.service.FapshiPaymentService;
 import com.mstan.shop.product.entity.Product;
 import com.mstan.shop.product.entity.ProductVariant;
 import com.mstan.shop.product.mapper.ProductMapper;
@@ -68,7 +68,7 @@ public class OrderService {
     private final PromoCodeRepository promoCodeRepository;
     private final PromoCodeService promoCodeService;
     private final PaymentRepository paymentRepository;
-    private final CamPayPaymentService camPayPaymentService;
+    private final FapshiPaymentService fapshiPaymentService;
     private final UserRepository userRepository;
     private final CartService cartService;
     private final OrderMapper orderMapper;
@@ -277,7 +277,7 @@ public class OrderService {
             // Le paiement mobile est asynchrone (le client confirme sur son téléphone) : pas
             // d'email/SMS/WhatsApp de confirmation ici, seulement une fois confirmPayment()
             // appelé par le webhook/le polling.
-            payment = camPayPaymentService.initiateCollection(order, phoneNumber);
+            payment = fapshiPaymentService.initiateCollection(order, phoneNumber);
         }
 
         return payment;
@@ -324,7 +324,7 @@ public class OrderService {
         return toResponseWithPayment(order);
     }
 
-    /** Polling endpoint: re-checks CamPay server-to-server rather than trusting only the local row. */
+    /** Polling endpoint: re-checks Fapshi server-to-server rather than trusting only the local row. */
     @Transactional
     public OrderResponse refreshPaymentStatus(UUID userId, UUID orderId) {
         User user = userRepository.findById(userId)
@@ -336,7 +336,7 @@ public class OrderService {
         Payment payment = paymentRepository.findFirstByOrderIdOrderByCreatedAtDesc(orderId).orElse(null);
         if (payment != null && payment.getMethod() == PaymentMethod.MOBILE_PAYMENT
                 && payment.getStatus() == PaymentStatus.PENDING && payment.getProviderReference() != null) {
-            PaymentStatus latest = camPayPaymentService.checkStatus(payment.getProviderReference());
+            PaymentStatus latest = fapshiPaymentService.checkStatus(payment.getProviderReference());
             if (latest == PaymentStatus.SUCCESSFUL) {
                 confirmPayment(orderId, payment.getProviderReference());
             } else if (latest == PaymentStatus.FAILED) {
