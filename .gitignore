@@ -25,5 +25,8 @@ Thumbs.db
 uploads/
 .env*
 env.txt
+CLAUDE.md
 
 datas-mstanshop/
+
+.claude
